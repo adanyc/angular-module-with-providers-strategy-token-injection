@@ -4,6 +4,6 @@ import { AuthStrategy } from './auth.strategy';
 @Injectable()
 export class FirebaseService implements AuthStrategy {
   login(username: string, password: string) {
-    return `Logged to FIREBASE with ${username} and ${password}`;
+    return `Logged through FIREBASE with ${username} and ${password}`;
   }
 }

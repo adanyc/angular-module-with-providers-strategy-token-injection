@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { ConfigModule } from './config/config.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { AuthModule } from './auth/auth.module';
   ],
   imports: [
     BrowserModule,
+    ConfigModule.forRoot('My Application'),
     AuthModule.facebook(),
   ],
   providers: [],

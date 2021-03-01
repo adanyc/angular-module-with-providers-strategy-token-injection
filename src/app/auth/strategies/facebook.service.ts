@@ -4,6 +4,6 @@ import { AuthStrategy } from './auth.strategy';
 @Injectable()
 export class FacebookService implements AuthStrategy {
   login(username: string, password: string) {
-    return `Logged to FACEBOOK with ${username} and ${password}`;
+    return `Logged through FACEBOOK with ${username} and ${password}`;
   }
 }
